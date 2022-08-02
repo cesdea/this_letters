@@ -1,2 +1,2 @@
-# this_letters-O
+# this letters...
 항해99에서 오랜 항해를 끝내며 같은 겪은 선원에게 주는 편지
