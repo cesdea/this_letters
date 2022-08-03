@@ -15,6 +15,7 @@ router.post("/login",async (req,res)=>{
     if(user.dataValues.password!=password){
         return res.status(400).send("WRONG_PASSWORD")
     }
+    res.cookie('Bearer',token,{maxAge: 360000})
     const token=jwt.sign({ email: email }, "thisletter")
         res.send({
             token:token,
