@@ -4,6 +4,7 @@ const SideMenu = () => {
   return (
       <SideHeader>
         <ul>
+          <li>로그아웃</li>
           <li>열어본 유리병</li>
           <li>만든 사람들</li>
         </ul>

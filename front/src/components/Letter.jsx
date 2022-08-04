@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {useRef} from "react";
 // import {useRef} from "react";
 
-const SendModal = ({letterModal}) => {
+const Letter = ({letterModal}) => {
   const textarea =useRef()
   const closeLetter = ()=> {
     letterModal.current.style.top = "100%"
@@ -10,7 +10,7 @@ const SendModal = ({letterModal}) => {
     textarea.current.value = ""
   }
   return (
-    <SSendModal>
+    <SLetter>
       <div className={"receiver"}>받는사람 에게...</div>
       <div className="textareaWrapper">
         <textarea ref={textarea} placeholder={"안녕 잘 지내니?"}/>
@@ -20,12 +20,12 @@ const SendModal = ({letterModal}) => {
         <button>편지 보내기</button>
       </div>
       <button onClick={closeLetter} className="closeButton">닫기</button>
-    </SSendModal>
+    </SLetter>
   )
 }
 
 
-const SSendModal = styled.div`
+const SLetter = styled.div`
   padding: 20px;
   margin-top: 5%;
   position: relative;
@@ -73,4 +73,4 @@ const SSendModal = styled.div`
     }
   }
 `
-export default SendModal
+export default Letter

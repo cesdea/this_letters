@@ -2,9 +2,8 @@ import React, {useRef} from "react";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import styled from "styled-components";
-import MenuBtn from "../components/MenuBtn";
 import SideMenu from "../components/SideMenu";
-import SendModal from "../components/SendModal";
+import Letter from "../components/Letter";
 
 const Coast = () => {
   const sidebar = useRef()
@@ -29,7 +28,7 @@ const Coast = () => {
             유리병 띄우기
           </SButton>
           <SSendModal ref={letterModal}>
-            <SendModal letterModal={letterModal}/>
+            <Letter letterModal={letterModal}/>
           </SSendModal>
         </SMain>
       </SWrapper>
