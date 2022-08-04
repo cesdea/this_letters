@@ -7,7 +7,7 @@ const Layout = (props) => {
 export default Layout;
 
 const SLayout = styled.section`
-  max-width: 1200px;
+  max-width: 700px;
   height: 100vh;
   margin: 0 auto;
 `;
